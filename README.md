@@ -1,37 +1,78 @@
-# HeavenSeekers website
+# HeavenSeekers – Travel Website
 
-A responsive, static travel-agency website for HeavenSeekers. It includes destination cards, sample tour packages, an inclusions section, and a booking inquiry form that opens WhatsApp with the customer's details.
+A responsive travel agency website focused on exploring the
+beautiful northern regions of Pakistan.
 
-## Before publishing — important edits
+## About the Project
 
-1. Open `script.js` and replace `923001234567` with your real WhatsApp number in international format (digits only; Pakistan example: `92` + number without the leading `0`).
-2. Update the Instagram handle, email address and brand details in `index.html`.
-3. Confirm every package price, duration, route and inclusion before accepting bookings. Current prices are illustrative estimates only.
-4. Replace the sample stock photos with your own licensed travel photos when available. The current photos load from Unsplash and require an internet connection.
-5. Add your actual business registration, terms, cancellation policy, safety information and payment instructions before taking deposits.
+HeavenSeekers aims to provide memorable travel experiences
+through the mountains, valleys, lakes and landscapes of
+Northern Pakistan.
 
-## Preview locally
+The website allows visitors to explore destinations,
+discover travel packages and submit booking inquiries.
 
-Open `index.html` in a browser. For a local development server, run:
+## Technologies Used
 
-```bash
-python -m http.server 8000
-```
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- WhatsApp integration
 
-Then visit `http://localhost:8000`.
+## Main Features
 
-## Deploy free with Netlify
+- Responsive website design
+- Premium homepage and navigation
+- Northern Pakistan destination sections
+- Travel packages with sample pricing
+- Package inclusions
+- WhatsApp booking inquiry form
+- Mobile-friendly navigation
+- Responsive layouts
 
-1. Extract the ZIP file.
-2. Visit https://app.netlify.com/drop
-3. Drag the extracted `heavenseekers_website` folder onto the page.
-4. Netlify will publish the static site and provide a public URL.
-5. You can connect a custom domain in Netlify's site settings.
+## Destinations
 
-Alternative: create a GitHub repository, upload these files, then import the repository into https://vercel.com/ or enable GitHub Pages.
+- Hunza Valley
+- Skardu
+- Astore Valley
+- Fairy Meadows
 
-## Notes
+## Project Structure
 
-- This is a static website; it does not yet have a database, customer login, online payment, admin dashboard or automatic booking confirmation.
-- The inquiry form sends the information to your WhatsApp; it does not reserve a seat or collect payment.
-- The contact details and phone number in the starter site are placeholders and must be changed.
+heavenseekers_website-project/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
+## How to Run the Project
+
+1. Clone or download this repository.
+2. Open the project folder in Visual Studio Code.
+3. Open index.html.
+4. Run the website using Live Server.
+
+## Booking System
+
+The website uses WhatsApp to send customer booking
+inquiries directly to the configured business number.
+
+## Future Improvements
+
+- Individual destination pages
+- Customer testimonials
+- Online booking management
+- Backend integration
+- Customer reviews
+- Live travel availability
+
+## Important Note
+
+Package prices are illustrative estimates and must be
+verified before accepting customer bookings.
+
+## Developer
+
+HeavenSeekers – Northern Pakistan Travel Experiences.
