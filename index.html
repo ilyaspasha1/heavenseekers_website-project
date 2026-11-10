@@ -1,0 +1,1234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover Northern Pakistan with HeavenSeekers. Premium guided tours, mountain adventures and customized travel packages.">
+<title>HeavenSeekers | Discover Northern Pakistan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green: #102d29;
+  --green2: #1d4039;
+  --gold: #d5bd91;
+  --cream: #f7f7f2;
+  --text: #263a34;
+  --muted: #758078;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+}
+
+a { text-decoration: none; color: inherit; }
+
+button, input, select, textarea { font: inherit; }
+
+.site-header {
+  height: 82px;
+  padding: 0 7%;
+  background: var(--green);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logo-icon {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  font: 27px 'Playfair Display';
+}
+
+.logo small {
+  display: block;
+  font-size: 7px;
+  color: #aebbb2;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+}
+
+.logo span span { color: var(--gold); font-weight: 400; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 11px;
+  color: #e5e9e5;
+}
+
+.nav a:hover { color: var(--gold); }
+
+.nav .nav-btn {
+  border: 1px solid var(--gold);
+  padding: 12px 17px;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: 0;
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 720px;
+  height: calc(100vh - 82px);
+  max-height: 850px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(5,23,21,.86), rgba(5,23,21,.45) 60%, rgba(5,23,21,.1)),
+    url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=2200&q=90')
+    center/cover;
+}
+
+.hero-content {
+  max-width: 780px;
+  margin-left: 10%;
+  padding: 30px 20px 30px 0;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font: 500 clamp(55px, 7vw, 90px)/1.04 'Playfair Display', serif;
+  letter-spacing: -2px;
+}
+
+.hero h1 em { color: var(--gold); }
+
+.hero-description {
+  max-width: 480px;
+  line-height: 1.9;
+  font-size: 13px;
+  color: #e0e7e0;
+  margin: 25px 0 32px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 16px 21px;
+  background: var(--gold);
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .7px;
+  border: none;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.btn:hover { background: #ead6b0; transform: translateY(-3px); }
+
+.hero-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.hero-links .secondary {
+  font-size: 10px;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 7px;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 25px;
+  left: 7%;
+  right: 7%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #e0e7e0;
+}
+
+/* GENERAL */
+
+section { scroll-margin-top: 82px; }
+
+.container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 100px 6%;
+}
+
+.section-title {
+  font: 500 clamp(38px, 4.5vw, 57px)/1.15 'Playfair Display', serif;
+  color: var(--green);
+}
+
+.section-title em { color: #a68a5c; }
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.section-heading > p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+/* TRUST */
+
+.trust {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: white;
+  padding: 27px 7%;
+}
+
+.trust div {
+  text-align: center;
+  border-right: 1px solid #e7e7df;
+  padding: 5px;
+}
+
+.trust div:last-child { border: 0; }
+
+.trust strong {
+  display: block;
+  color: #a68a5c;
+  font: italic 21px 'Playfair Display';
+}
+
+.trust span {
+  font-size: 10px;
+  font-weight: 600;
+  color: #53645b;
+}
+
+/* INTRO */
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  align-items: end;
+}
+
+.intro p:last-child {
+  font-size: 12px;
+  line-height: 2;
+  color: var(--muted);
+}
+
+/* DESTINATIONS */
+
+.destinations { padding-top: 40px; }
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  grid-template-rows: 270px 270px;
+  gap: 16px;
+}
+
+.destination {
+  position: relative;
+  display: flex;
+  align-items: end;
+  padding: 28px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  isolation: isolate;
+  transition: .3s;
+}
+
+.destination::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(0deg, #081d1bcf, transparent 75%);
+  transition: .3s;
+}
+
+.destination:hover::before {
+  background: linear-gradient(0deg, #081d1bea, #081d1b22);
+}
+
+.destination:hover { transform: translateY(-3px); }
+
+.destination small {
+  color: var(--gold);
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+
+.destination h3 {
+  font: 500 34px 'Playfair Display';
+  margin: 7px 0;
+}
+
+.destination p { font-size: 10px; }
+
+.destination .arrow {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  border: 1px solid white;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+}
+
+.hunza {
+  grid-row: span 2;
+  background-image: url('https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1100&q=85');
+}
+
+.skardu {
+  background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85');
+}
+
+.astore {
+  background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85');
+}
+
+/* PACKAGES */
+
+.packages-section { background: #eeefe8; }
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.package {
+  background: white;
+  transition: .3s;
+  box-shadow: 0 5px 25px #102d2910;
+}
+
+.package:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px #102d2920;
+}
+
+.package-img {
+  height: 205px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.package-img span {
+  position: absolute;
+  bottom: 15px;
+  left: 18px;
+  color: white;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 5px black;
+}
+
+.p1 { background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=85'); }
+.p2 { background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=85'); }
+.p3 { background-image: url('https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=800&q=85'); }
+.p4 { background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=85'); }
+.p5 { background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=85'); }
+
+.package-body { padding: 23px; }
+
+.package-type {
+  color: #a68a5c;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.package h3 {
+  font: 600 23px 'Playfair Display';
+  margin: 10px 0;
+}
+
+.package-description {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.9;
+  min-height: 58px;
+}
+
+.package-bottom {
+  border-top: 1px solid #e8e9e3;
+  margin-top: 18px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.package-price { font-size: 9px; color: var(--muted); }
+
+.package-price strong {
+  display: block;
+  font-size: 17px;
+  color: var(--green);
+  margin-top: 4px;
+}
+
+.package-bottom button {
+  border: 0;
+  background: transparent;
+  color: #977a4b;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.custom-package {
+  background: var(--green);
+  color: white;
+  padding: 30px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.custom-package h3 {
+  font: 500 31px 'Playfair Display';
+  margin: 15px 0;
+}
+
+.custom-package h3 em { color: var(--gold); }
+
+.custom-package p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #c6d1c9;
+}
+
+.price-note {
+  font-size: 9px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-top: 24px;
+}
+
+/* WHY US */
+
+.why {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--green);
+  color: white;
+}
+
+.why-image {
+  min-height: 620px;
+  background: url('https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1100&q=85') center/cover;
+}
+
+.why-content {
+  padding: 85px 12%;
+  align-self: center;
+}
+
+.why-content h2 {
+  font: 500 clamp(38px, 4vw, 54px) 'Playfair Display';
+}
+
+.why-content h2 em { color: var(--gold); }
+
+.why-content > p {
+  font-size: 11px;
+  color: #c3d0c7;
+  line-height: 2;
+  margin: 25px 0;
+}
+
+.feature {
+  display: flex;
+  gap: 20px;
+  padding: 17px 0;
+  border-top: 1px solid #3c5b51;
+}
+
+.feature b {
+  font: 22px 'Playfair Display';
+  color: var(--gold);
+}
+
+.feature strong { font-size: 11px; display: block; margin-bottom: 6px; }
+.feature small { color: #c0cec5; font-size: 9px; line-height: 1.7; }
+
+/* INCLUSIONS */
+
+.inclusion-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.inclusion {
+  border-top: 1px solid #d9dbd3;
+  padding-top: 20px;
+}
+
+.inclusion .symbol { font-size: 25px; color: #a68a5c; }
+
+.inclusion h3 {
+  font: 600 18px 'Playfair Display';
+  margin: 15px 0 8px;
+}
+
+.inclusion p {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+/* QUOTE */
+
+.quote {
+  background: #d9c7a5;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.quote p {
+  font: italic 27px 'Playfair Display';
+  color: var(--green);
+  margin-bottom: 18px;
+}
+
+.quote small {
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+
+/* BOOKING */
+
+.booking {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 10%;
+  align-items: start;
+}
+
+.booking-description {
+  font-size: 11px;
+  line-height: 2;
+  color: var(--muted);
+  margin: 25px 0 35px;
+}
+
+.contact-item {
+  margin: 20px 0;
+  font-size: 11px;
+}
+
+.contact-item small {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #9b8a6a;
+  margin-bottom: 6px;
+}
+
+.booking-form {
+  background: white;
+  padding: 35px;
+  box-shadow: 0 10px 45px #102d2910;
+}
+
+.booking-form h3 {
+  font: 600 28px 'Playfair Display';
+  margin-bottom: 6px;
+}
+
+.booking-form > p {
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+
+.booking-form label {
+  display: block;
+  font-size: 9px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #42544b;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 13px;
+  margin-top: 8px;
+  border: 1px solid #e1e5dd;
+  background: #fafbf8;
+  font-size: 10px;
+  outline-color: #a68a5c;
+}
+
+.booking-form textarea { resize: vertical; }
+
+.submit-btn {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form-note {
+  display: block;
+  font-size: 8px;
+  line-height: 1.7;
+  color: #929b94;
+  margin-top: 12px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0c2522;
+  color: white;
+  padding: 45px 7% 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+  gap: 20px;
+}
+
+.footer-quote {
+  font: italic 20px 'Playfair Display';
+  color: var(--gold);
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  border-top: 1px solid #34504a;
+  padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 8px;
+  color: #a8b7ae;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 23px;
+  right: 23px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #1e9e67;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  box-shadow: 0 5px 20px #0003;
+  z-index: 90;
+  transition: .2s;
+}
+
+.whatsapp:hover { transform: scale(1.1); }
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+  .nav { gap: 15px; }
+  .package-grid { grid-template-columns: repeat(2, 1fr); }
+  .container { padding: 80px 6%; }
+}
+
+@media(max-width: 650px) {
+  .site-header { height: 70px; padding: 0 5%; }
+  .menu-btn { display: block; }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--green);
+    padding: 25px 7%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 22px;
+  }
+  .nav.open { display: flex; }
+  .nav-btn { text-align: center; }
+  .hero {
+    min-height: 660px;
+    height: 690px;
+    background-position: 58% center;
+  }
+  .hero-content { margin-left: 7%; padding-right: 6%; }
+  .hero h1 { font-size: 49px; }
+  .hero-description { font-size: 11px; }
+  .hero-links { align-items: flex-start; flex-direction: column; gap: 20px; }
+  .hero-bottom { font-size: 6px; left: 5%; right: 5%; }
+  .trust { grid-template-columns: 1fr 1fr; gap: 15px 5px; }
+  .trust div { border: 0; text-align: left; }
+  .container { padding: 70px 6%; }
+  .intro { grid-template-columns: 1fr; gap: 25px; }
+  .section-heading { display: block; }
+  .section-heading > p { margin-top: 15px; }
+  .destination-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 210px 210px;
+  }
+  .hunza { grid-row: auto; }
+  .package-grid { grid-template-columns: 1fr; }
+  .package-img { height: 220px; }
+  .package-description { min-height: 0; }
+  .custom-package { min-height: 300px; }
+  .why { grid-template-columns: 1fr; }
+  .why-image { min-height: 330px; }
+  .why-content { padding: 65px 7%; }
+  .inclusion-grid { grid-template-columns: 1fr 1fr; gap: 25px 15px; }
+  .quote p { font-size: 22px; }
+  .booking { grid-template-columns: 1fr; gap: 35px; }
+  .booking-form { padding: 25px 18px; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .footer-top { flex-wrap: wrap; }
+  .footer-quote { font-size: 16px; }
+  .footer-bottom { flex-direction: column; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="#home" class="logo">
+    <div class="logo-icon">H</div>
+    <div>
+      HEAVEN<span>SEEKERS</span>
+      <small>PAKISTAN • BEYOND THE ORDINARY</small>
+    </div>
+  </a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+  <nav class="nav" id="navigation">
+    <a href="#destinations">Destinations</a>
+    <a href="#packages">Packages</a>
+    <a href="#why">Our approach</a>
+    <a href="#booking">Contact</a>
+    <a href="#booking" class="nav-btn">Plan your trip ↗</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">✦ YOUR JOURNEY TO THE MOUNTAINS STARTS HERE</p>
+    <h1>Find your heaven.<br><em>Live the journey.</em></h1>
+    <p class="hero-description">
+      From Hunza's breathtaking valleys to the mighty peaks of Skardu,
+      discover the extraordinary beauty of Northern Pakistan with HeavenSeekers.
+    </p>
+    <div class="hero-links">
+      <a href="#packages" class="btn">Explore our trips →</a>
+      <a href="#destinations" class="secondary">Discover destinations ↓</a>
+    </div>
+  </div>
+
+  <div class="hero-bottom">
+    <span>35°55' N — THE NORTHERN FRONTIER</span>
+    <span>GILGIT-BALTISTAN & BEYOND</span>
+  </div>
+</section>
+
+<div class="trust">
+  <div><strong>01</strong><span>Local knowledge</span></div>
+  <div><strong>02</strong><span>Guided adventures</span></div>
+  <div><strong>03</strong><span>Custom journeys</span></div>
+  <div><strong>04</strong><span>Responsible travel</span></div>
+</div>
+
+<section class="container intro">
+  <div>
+    <p class="eyebrow" style="color:#a68a5c">TRAVEL WITH MEANING</p>
+    <h2 class="section-title">More than a trip.<br><em>A story worth telling.</em></h2>
+  </div>
+  <p>
+    We create memorable journeys through Pakistan's most breathtaking
+    landscapes. Whether you want a peaceful escape, a challenging trek,
+    or a road trip with friends, we'll help you explore the north your way.
+  </p>
+</section>
+
+<section class="container destinations" id="destinations">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow" style="color:#a68a5c">PLACES THAT STAY WITH YOU</p>
+      <h2 class="section-title">Explore the <em>North.</em></h2>
+    </div>
+    <p>Every valley has a different rhythm.<br>Which one will you discover first?</p>
+  </div>
+
+  <div class="destination-grid">
+
+    <a href="#packages" class="destination hunza">
+      <div>
+        <small>01 / THE ICONIC VALLEY</small>
+        <h3>Hunza Valley</h3>
+        <p>Peaks, culture and unforgettable sunsets</p>
+      </div>
+      <span class="arrow">↗</span>
+    </a>
+
+    <a href="#packages" class="destination skardu">
+      <div>
+        <small>02 / LAND OF GIANTS</small>
+        <h3>Skardu</h3>
+        <p>Turquoise lakes and mighty mountains</p>
+      </div>
+      <span class="arrow">↗</span>
+    </a>
+
+    <a href="#packages" class="destination astore">
+      <div>
+        <small>03 / HIDDEN GEM</small>
+        <h3>Astore Valley</h3>
+        <p>Alpine meadows and peaceful escapes</p>
+      </div>
+      <span class="arrow">↗</span>
+    </a>
+
+  </div>
+</section>
+
+<section class="packages-section" id="packages">
+<div class="container">
+
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow" style="color:#a68a5c">CURATED ROUTES • UNFORGETTABLE MOMENTS</p>
+      <h2 class="section-title">Journeys made <em>for you.</em></h2>
+    </div>
+    <p>Small groups, local insight and memories<br>that last a lifetime.</p>
+  </div>
+
+  <div class="package-grid">
+
+    <article class="package">
+      <div class="package-img p1"><span>5 DAYS / 4 NIGHTS</span></div>
+      <div class="package-body">
+        <p class="package-type">CULTURE • SCENIC DRIVE</p>
+        <h3>Hunza Valley Escape</h3>
+        <p class="package-description">Explore Karimabad, Attabad Lake, Passu Cones and the beautiful landscapes of Hunza.</p>
+        <div class="package-bottom">
+          <div class="package-price">Starting from<strong>PKR 32,500</strong></div>
+          <button onclick="selectPackage('Hunza Valley Escape')">View trip ↗</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="package">
+      <div class="package-img p2"><span>6 DAYS / 5 NIGHTS</span></div>
+      <div class="package-body">
+        <p class="package-type">LAKES • ADVENTURE</p>
+        <h3>Skardu Adventure</h3>
+        <p class="package-description">Discover Shangrila, Upper Kachura, the cold desert and the dramatic beauty of Skardu.</p>
+        <div class="package-bottom">
+          <div class="package-price">Starting from<strong>PKR 42,500</strong></div>
+          <button onclick="selectPackage('Skardu Adventure')">View trip ↗</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="package">
+      <div class="package-img p3"><span>4 DAYS / 3 NIGHTS</span></div>
+      <div class="package-body">
+        <p class="package-type">TREKKING • MOUNTAIN VIEWS</p>
+        <h3>Fairy Meadows Trek</h3>
+        <p class="package-description">Enjoy a guided mountain adventure with unforgettable views of Nanga Parbat.</p>
+        <div class="package-bottom">
+          <div class="package-price">Starting from<strong>PKR 38,500</strong></div>
+          <button onclick="selectPackage('Fairy Meadows Trek')">View trip ↗</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="package">
+      <div class="package-img p4"><span>4 DAYS / 3 NIGHTS</span></div>
+      <div class="package-body">
+        <p class="package-type">NATURE • SLOW TRAVEL</p>
+        <h3>Astore Valley Experience</h3>
+        <p class="package-description">Discover Rama Lake, lush green meadows and the peaceful villages of Astore.</p>
+        <div class="package-bottom">
+          <div class="package-price">Starting from<strong>PKR 29,500</strong></div>
+          <button onclick="selectPackage('Astore Valley Experience')">View trip ↗</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="package">
+      <div class="package-img p5"><span>8 DAYS / 7 NIGHTS</span></div>
+      <div class="package-body">
+        <p class="package-type">TWO REGIONS • ONE JOURNEY</p>
+        <h3>Hunza & Skardu Explorer</h3>
+        <p class="package-description">Experience two of Northern Pakistan's most spectacular destinations in one journey.</p>
+        <div class="package-bottom">
+          <div class="package-price">Starting from<strong>PKR 59,500</strong></div>
+          <button onclick="selectPackage('Hunza & Skardu Explorer')">View trip ↗</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="custom-package">
+      <p class="eyebrow">YOUR TRIP, YOUR RULES</p>
+      <h3>Want something<br><em>different?</em></h3>
+      <p>Tell us your dates, group size and dream destinations. We'll create a customized itinerary around you.</p>
+      <a href="#booking" class="btn" style="margin-top:25px">Build my trip ↗</a>
+    </article>
+
+  </div>
+
+  <p class="price-note">
+    *Prices are illustrative starting estimates in PKR per person.
+    Final quotations depend on dates, group size, transport, accommodation
+    and availability. Confirm all inclusions before booking.
+  </p>
+
+</div>
+</section>
+
+<section class="why" id="why">
+  <div class="why-image"></div>
+
+  <div class="why-content">
+    <p class="eyebrow">THE HEAVENSEEKERS WAY</p>
+    <h2>The best journeys<br>begin with <em>good people.</em></h2>
+
+    <p>
+      We believe the north deserves to be explored with curiosity,
+      respect and care. Our trips are designed to make every experience
+      personal, comfortable and memorable.
+    </p>
+
+    <div class="feature">
+      <b>01</b>
+      <div><strong>Local knowledge</strong><small>Discover places with guidance from people who know the region.</small></div>
+    </div>
+
+    <div class="feature">
+      <b>02</b>
+      <div><strong>Thoughtful planning</strong><small>Clear itineraries, practical support and transparent quotations.</small></div>
+    </div>
+
+    <div class="feature">
+      <b>03</b>
+      <div><strong>Travel your way</strong><small>Join a group or request a private customized journey.</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow" style="color:#a68a5c">THOUGHTFULLY PLANNED</p>
+      <h2 class="section-title">What your trip <em>can include.</em></h2>
+    </div>
+    <p>We'll confirm exactly what's included<br>in your final itinerary.</p>
+  </div>
+
+  <div class="inclusion-grid">
+    <div class="inclusion">
+      <span class="symbol">✦</span>
+      <h3>Transport</h3>
+      <p>Tour vehicle and local transfers as specified in your package.</p>
+    </div>
+    <div class="inclusion">
+      <span class="symbol">⌂</span>
+      <h3>Accommodation</h3>
+      <p>Selected hotels or guesthouses with room-sharing options.</p>
+    </div>
+    <div class="inclusion">
+      <span class="symbol">◎</span>
+      <h3>Local guidance</h3>
+      <p>Trip coordination and local guide support where applicable.</p>
+    </div>
+    <div class="inclusion">
+      <span class="symbol">＋</span>
+      <h3>Travel support</h3>
+      <p>Pre-trip checklist, itinerary assistance and practical guidance.</p>
+    </div>
+  </div>
+
+  <p class="price-note">
+    Meals, entry tickets, personal expenses, insurance, flights and
+    optional activities are excluded unless stated in your written quotation.
+  </p>
+</section>
+
+<div class="quote">
+  <p>"The mountains are calling, and the best way to answer is together."</p>
+  <small>HEAVENSEEKERS • PAKISTAN</small>
+</div>
+
+<section class="container booking" id="booking">
+
+  <div>
+    <p class="eyebrow" style="color:#a68a5c">LET'S PLAN SOMETHING BEAUTIFUL</p>
+    <h2 class="section-title">Your next story<br>starts <em>right here.</em></h2>
+
+    <p class="booking-description">
+      Share a few details and we'll help you plan a journey
+      that fits your time, group and budget.
+    </p>
+
+    <div class="contact-item">
+      <small>EMAIL</small>
+      hello@heavenseekers.pk
+    </div>
+
+    <div class="contact-item">
+      <small>INSTAGRAM</small>
+      @heavenseekers
+    </div>
+  </div>
+
+  <form class="booking-form" id="bookingForm">
+    <h3>Plan your trip</h3>
+    <p>Send us your details directly through WhatsApp.</p>
+
+    <div class="form-row">
+      <label>Your name
+        <input type="text" name="name" placeholder="Full name" required>
+      </label>
+
+      <label>WhatsApp number
+        <input type="tel" name="phone" placeholder="+92 3XX XXXXXXX" required>
+      </label>
+    </div>
+
+    <label>Choose your package
+      <select name="package" id="packageSelect" required>
+        <option value="">Select a journey</option>
+        <option>Hunza Valley Escape</option>
+        <option>Skardu Adventure</option>
+        <option>Fairy Meadows Trek</option>
+        <option>Astore Valley Experience</option>
+        <option>Hunza & Skardu Explorer</option>
+        <option>Custom trip</option>
+      </select>
+    </label>
+
+    <div class="form-row">
+      <label>Preferred date
+        <input type="date" name="date">
+      </label>
+
+      <label>Travelers
+        <select name="people">
+          <option>1 person</option>
+          <option selected>2 people</option>
+          <option>3–5 people</option>
+          <option>6–10 people</option>
+          <option>10+ people</option>
+        </select>
+      </label>
+    </div>
+
+    <label>Additional information
+      <textarea name="message" rows="3" placeholder="Your budget, preferences or questions..."></textarea>
+    </label>
+
+    <button type="submit" class="btn submit-btn">
+      Send inquiry on WhatsApp ↗
+    </button>
+
+    <small class="form-note">
+      No payment is collected through this form. Your booking is confirmed
+      only after written confirmation and agreed payment terms.
+    </small>
+  </form>
+
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-top">
+    <a href="#home" class="logo">
+      <div class="logo-icon">H</div>
+      <div>
+        HEAVEN<span>SEEKERS</span>
+        <small>PAKISTAN • BEYOND THE ORDINARY</small>
+      </div>
+    </a>
+
+    <p class="footer-quote">Find your heaven.<br>Leave only footprints.</p>
+
+    <a href="#home" style="font-size:9px;color:#d5bd91">BACK TO TOP ↑</a>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> HeavenSeekers. All rights reserved.</span>
+    <span>Travel responsibly • Respect local communities • Protect nature</span>
+  </div>
+</footer>
+
+<a href="#" class="whatsapp" id="whatsappButton" aria-label="WhatsApp">☏</a>
+
+<script>
+
+// =============================================
+// HEAVENSEEKERS WEBSITE SETTINGS
+// =============================================
+
+// IMPORTANT: Change this to your actual WhatsApp number.
+// Pakistan example: 923001234567
+// Do not include +, spaces or dashes.
+
+const WHATSAPP_NUMBER = "6282324679856";
+
+// =============================================
+// MOBILE NAVIGATION
+// =============================================
+
+const menuBtn = document.getElementById("menuBtn");
+const navigation = document.getElementById("navigation");
+
+menuBtn.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+  menuBtn.textContent = navigation.classList.contains("open") ? "✕" : "☰";
+});
+
+navigation.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navigation.classList.remove("open");
+    menuBtn.textContent = "☰";
+  });
+});
+
+// =============================================
+// CURRENT YEAR
+// =============================================
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// =============================================
+// WHATSAPP FLOATING BUTTON
+// =============================================
+
+document.getElementById("whatsappButton").href =
+  "https://wa.me/" + WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent(
+    "Hello HeavenSeekers! I would like to know about your travel packages."
+  );
+
+// =============================================
+// SELECT PACKAGE
+// =============================================
+
+function selectPackage(packageName) {
+  document.getElementById("packageSelect").value = packageName;
+
+  document.getElementById("booking").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+// =============================================
+// BOOKING FORM
+// =============================================
+
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+
+  event.preventDefault();
+
+  const form = new FormData(this);
+
+  const message = `
+Hello HeavenSeekers! I would like to plan a trip.
+
+Name: ${form.get("name")}
+WhatsApp: ${form.get("phone")}
+Package: ${form.get("package")}
+Travel Date: ${form.get("date") || "Flexible"}
+Travelers: ${form.get("people")}
+Additional Information: ${form.get("message") || "None"}
+
+Please share more details about availability and booking.
+`;
+
+  const whatsappURL =
+    "https://wa.me/" +
+    WHATSAPP_NUMBER +
+    "?text=" +
+    encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>
